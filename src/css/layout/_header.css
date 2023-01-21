@@ -1,0 +1,46 @@
+.header {
+    background-color: var(--color-brown);
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__brand {
+    margin-right: 2rem;
+    font-family: 'Rubik Gemstones', cursive;
+}
+
+.navigation li {
+    padding: 0.5rem 1rem;
+}
+
+.navigation li i{
+    padding-right: 0.5rem;
+    color: var(--color-white);
+}
+
+.active {
+    background-color: var(--color-brown2);
+}
+
+.header__btn {
+    /* font-family: 'Times New Roman', Times, serif; */
+    color: var(--color-brown);
+    background-color: var(--color-background);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+}
+
+.xx {
+    margin: auto 0;
+}

@@ -1,1 +1,31 @@
+@import url("./abstracts/_variables.css");
+@import url("./base/_display.css");
+@import url("./base/_reset.css");
+@import url("./base/_spacing.css");
+@import url("./base/_typography.css");
+@import url("./components/_buttons.css");
+@import url("./layout/_content.css");
+@import url("./layout/_forms.css");
+@import url("./layout/_header.css");
+@import url("./layout/_project-card.css");
+@import url("./layout/_sidebar.css");
+@import url("./pages/_login.css");
+@import url("./pages/_add.css");
 
+body {
+    background-color: var(--color-background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+    transition: color 500ms;
+    color: var(--color-brown);
+}
+
+i:hover {
+    color: var(--color-brown2);
+}
+
+.copy {
+    cursor: copy;
+}

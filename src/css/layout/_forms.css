@@ -1,0 +1,90 @@
+.formpage__label {
+    text-transform: uppercase;
+    font-size: .875rem;
+    padding: 0.25rem;
+    color: var(--color-brown2);
+}
+.formpage__input {
+    padding: 1rem 1rem;
+    margin: 0.25rem 0 1rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-brown);
+    width: 100%;
+}
+
+.formpage__input-wrong {
+    border: 1.5px solid var(--color-red);
+    background-color: var(--color-lightred);
+}
+
+.formpage__input:focus {
+    outline: var(--color-brown) solid 1px;
+}
+
+.formpage__button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.025rem;
+    color: var(--color-white);
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: var(--color-brown);
+    width: 100%;
+    transition: 500ms;
+}
+
+.formpage__button:hover {
+    background-color: var(--color-brown2);
+    color: var(--color-brown);
+}
+
+.formpage__link {
+    color: var(--color-brown);
+    font-weight: 700;
+    text-decoration: none;
+    background:
+    linear-gradient(
+      to right,
+      #BFA5A4,
+      #643F3F
+    ),
+    linear-gradient(
+      to right,
+      #643F3F,
+      #BFA5A4
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 500ms;
+}
+
+.formpage__link:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.formpage__intro {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.formpage__warning {
+    color: var(--color-red);
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.formpage__flex {
+    display: flex;
+    align-items: center;
+}
+
+.formpage__flex .formpage__label {
+    min-width: 150px;
+}
+
+
+.formpage__flex .formpage__input {
+    margin: 0.5rem 0;
+}
+

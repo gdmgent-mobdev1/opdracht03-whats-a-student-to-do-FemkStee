@@ -1,0 +1,54 @@
+/* Padding */
+.p-2 {
+    padding: 0.5rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.pb-4 {
+    padding-bottom: 1rem;
+}
+
+.pt-4 {
+    padding-top: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.p-10 {
+    padding: 2.5rem;
+}
+
+/* Margin */
+.m-2 {
+    margin: 0.5rem;
+}
+
+.m-4 {
+    margin: 1rem;
+}
+
+.m-6 {
+    margin: 1.5rem;
+}
+
+.m-8 {
+    margin: 2rem;
+}
+
+.m-10 {
+    margin: 2.5rem;
+}
+

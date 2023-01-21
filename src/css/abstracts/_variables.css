@@ -1,0 +1,27 @@
+:root {
+
+    /* Colors */
+    --color-darkbrown: #382828;
+    --color-brown: #643F3F;
+    --color-brown2: #BFA5A4;
+    --color-white: #fff;
+    --color-lightgray: #C4BFBF;
+    --color-darkgray: #524A4A;
+
+    --color-background: rgba(232, 227, 228);
+    --color-background2:rgb(247, 243, 243);
+
+    --color-blur: rgba(255, 255, 255, 0.9);
+
+    --color-red: #B22B27;
+    --color-lightred: rgb(249, 215, 215);
+    --color-green: rgba(28, 91, 48, 1);
+    --color-lightgreen: rgba(141, 222, 167, 1);
+    --color-yellow: #975a1e;
+    --color-lightyellow: #FFCDAA;
+
+
+    /* Font family */
+    --font-serif: "Times New Roman', Times, serif";
+    --font-sans: "Arial, Helvetica, sans-serif";
+}

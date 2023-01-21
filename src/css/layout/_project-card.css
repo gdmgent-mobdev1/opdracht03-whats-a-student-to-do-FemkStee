@@ -1,0 +1,75 @@
+.card {
+    background-color: var(--color-white);
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.taskcard {
+    flex-grow: 1;
+    width: 27vw;
+}
+
+.card__title {
+    color: var(--color-darkbrown);
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.card__status {
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.card__status p {
+    padding: 0.5rem;
+}
+
+.status1 {
+    /* Overdue */
+    background-color: var(--color-lightred);
+    color: var(--color-red);
+}
+
+.status2 {
+    /* Completed */
+    background-color: var(--color-lightgreen);
+    color: var(--color-green);
+}
+
+.status3 {
+    /* Not started */
+    background-color: var(--color-lightyellow);
+    color: var(--color-yellow);
+}
+
+.status4 {
+    /* Not defined */
+    background-color: var(--color-lightgray);
+    color: var(--color-darkgray);
+}
+
+
+.card__info {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+    color: var(--color-lightgray);
+}
+
+
+.usercircle {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--color-brown2);
+    border-radius: 50%;
+    border: 1px solid var(--color-white);
+    line-height: 2rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.usercircle:nth-child(n+2) {
+    margin-left: -1rem;
+}

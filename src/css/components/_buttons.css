@@ -1,0 +1,24 @@
+button {
+    cursor: pointer;
+    background-color: var(--color-white);
+}
+
+.add__button {
+    background-color: var(--color-lightgreen);
+    color: var(--color-green);
+    transition: 500ms;
+}
+
+.add__button:hover {
+    font-weight: 700;
+}
+
+.cancel__button {
+    background-color: var(--color-lightred);
+    color: var(--color-red);
+    transition: 500ms;
+}
+
+.cancel__button:hover {
+    font-weight: 700;
+}

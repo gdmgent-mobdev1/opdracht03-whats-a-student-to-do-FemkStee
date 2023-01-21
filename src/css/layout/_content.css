@@ -1,0 +1,113 @@
+.container {
+    border-radius: 8px;
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white);
+
+    display: flex;
+}
+
+.content {
+    width: 100%;
+}
+
+.content__header-title {
+    margin: 2rem 1rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: var(--color-darkbrown);
+}
+
+.content__header {
+    margin: 1rem;
+}
+
+.content__header-link {
+    text-transform: uppercase;
+    color: var(--color-lightgray);
+    text-decoration: none;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    transition: 500ms;
+}
+
+.content__header-link:hover {
+    color: var(--color-brown2);
+    border-bottom: 3px solid var(--color-brown2);
+    cursor: pointer;
+}
+
+.content__header-active {
+    border-bottom: 3px solid var(--color-brown2);
+}
+
+.content__content {
+    min-height: 100vh;
+    min-height: 100%;
+    /* border: 1px solid red; */
+    padding: 2rem;
+    background-color: var(--color-background2);
+}
+
+.content__content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.join__input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    color: var(--color-darkbrown);
+}
+
+.join__input:focus {
+    outline: none;
+}
+
+.join__btn {
+    padding: 0.5rem 1rem;
+    margin-left: -0.5rem;
+
+    background-color: var(--color-brown);
+    color: var(--color-white);
+    letter-spacing: 0.025rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    transition: 500ms;
+}
+
+.join__btn i {
+    color: var(--color-white);
+    transition: 500ms;
+}
+
+.join__btn i:hover {
+    color: var(--color-brown);    
+}
+
+.join__btn:hover {
+    background-color: var(--color-brown2);
+    color: var(--color-brown);    
+}
+
+.content__filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.content__view {
+    margin-left: 2rem;
+    padding: 0.5rem 2rem;
+    background-color: var(--color-background);
+    color: var(--color-darkgray);
+    border-radius: 0.5rem;
+}
+
+.content__view:hover {
+    cursor: pointer;
+    font-weight: 700;
+}

@@ -4,10 +4,192 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/5fc7a6825f.js" crossorigin="anonymous"></script>
+    <title>Mylo ®</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+
+      <!-- Login -->
+      <div id="loginPage" class="login formpage p-10 rounded hidden">
+        <h1 class="text-3xl text-brown font-serif pb-2">Welcome Back ...</h1>
+        <p class="text-lightgray formpage__intro">Please enter your email and password</p>
+          <input id="inlogMailInp" class="block formpage__input" type="text" placeholder="Email">
+          <div id="inlogPassw" class="flex justify-between formpage__input">
+            <input id="inlogPasswInp" type="password" placeholder="Password">
+            <button class="eye"><i class="fa-solid fa-eye" id="loginIconEye"></i> </button> 
+          </div>
+          <div id="errorMessage" class="formpage__warning"></div>
+          <button id="loginBtn" class="block formpage__button">Login</button>
+        <p class="text-lightgray text-center">Or continue with</p>
+        <div id="googleLoginBtn" class="p-4 text-center"><i class="fa-brands fa-google "></i></div>
+        <p class="text-lightgray text-center">Don't have an account yet? <a id="regLinkBtn" href="#" class="formpage__link">Create Account</a></p> 
+      </div>
+
+      <!-- Register -->
+      <div id="registerPage" class="register formpage p-10 rounded">
+        <h1 class="text-3xl text-brown font-serif pb-2">Welcome ...</h1>
+        <p class="text-lightgray formpage__intro">Please enter some information</p>
+          <input id="regNameInp" class="block formpage__input" type="text" placeholder="Firstname">
+          <input id="regMailInp" class="block formpage__input" type="text" placeholder="Email">
+          <div id="regPassw" class="flex justify-between formpage__input">
+            <input id="regPasswInp" type="password" placeholder="Password">
+            <button class="eye"><i class="fa-solid fa-eye" id="regIconEye"></i> </button> 
+          </div>
+          <div id="errorMessage2" class="formpage__warning"></div>
+          <button id="regBtn" class="block formpage__button">Register</button>
+        <p class="text-lightgray text-center">Or continue with</p>
+        <div id="googleLoginBtn" class="p-4 text-center"><i class="fa-brands fa-google"></i></div>
+        <p class="text-lightgray text-center">Already have an account? <a id="loginLinkBtn" href="#" class="formpage__link">Log in</a></p> 
+      </div>
+
+      <!-- Dashboard -->
+      <div id="page" class="hidden">
+        <!-- Header top -->
+        <div class="header">
+          <div class="navigation">
+            <p class="navigation__brand text-white text-3xl">Mylo</p>
+          </div>
+          <div class="xx">
+            <a class="uppercase text-brown2 text-sm" href="">Log out</a>
+            <button id="addProjectBtn" class="header__btn"><i class="fa-solid fa-plus"></i> add project</button>
+          </div>
+        </div>
+
+        <div class="container">
+
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <div class="siderbar__navigation">
+              <a id="dashboard" class="siderbar__navigation-link"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+              <a id="projects" class="siderbar__navigation-link"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+              <a id="tasks" class="siderbar__navigation-link"><i class="fa-solid fa-list-check"></i>Tasks</a>
+              <a id="settings" class="siderbar__navigation-link"><i class="fa-solid fa-gear"></i>Settings</a>
+            </div>
+            <div class="siderbar__user">
+              <p id="userName"></p>
+              <div class="circle">
+                <div><i class="fa-solid fa-user text-lg text-white"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- content Projects -->
+
+          <div id="contentPageProject" class="content hidden">
+            <div class="content__header">
+              <div class="content__header-title">
+                <h1>Projects</h1>
+              </div>
+              <ul class="flex justify-between">
+                <li><a class="projectsOverview content__header-link">Overview</a></li>
+                <li><a class="projectsChat content__header-link">Chat</a></li>
+                <li><a class="projectsTasks content__header-link">Tasks</a></li>
+                <li><a class="projectsMembers content__header-link">Members</a></li>
+              </ul>  
+            </div>
+            <div class="content__content">
+              <div class="content__content-title">
+                <h1 id="viewTitle" class="text-xl font-serif text-darkbrown">All projects</h1>
+                <div>
+                  <input class="join__input" type="text" placeholder="#joinproject">
+                  <button class="join__btn"><i class="fa-solid fa-plus"></i> add</button>
+                </div>
+              </div>
+              <div class="content__filter">
+                <div>
+                <p class="uppercase text-lightgray"></p>
+                </div>
+                <div class="flex">
+                  <div id="viewAll" class="content__view">All</div>
+                  <div id="viewMy" class="content__view">My</div>
+                </div>
+              </div>
+
+              <div id="projectlist">
+                <!-- JS -->
+              </div>
+  
+            </div>
+          </div>
+
+          <!-- Project detail -->
+    
+          <div id="contentPageProjectDetail" class="content hidden">
+            <div class="content__header">
+              <div class="content__header-title">
+                <h1 id="contentHeaderTitle">Project: </h1><p id="contentHeaderUnderTitle" class="text-lightgray text-lg copy"></p>
+              </div>
+              <ul class="flex justify-between">
+                <li><a class="projectsOverview content__header-link">Overview</a></li>
+                <li><a class="projectsChat content__header-link">Chat</a></li>
+                <li><a class="projectsTasks content__header-link">Tasks</a></li>
+                <li><a class="projectsMembers content__header-link">Members</a></li>
+              </ul>  
+            </div>
+            <div id="projectDetailContent">
+            </div>
+          </div>      
+
+          <!-- Projects taks-->
+
+          <div id="contentPageTasks" class="content hidden">
+            <div class="content__header">
+              <div class="content__header-title">
+                <h1>Tasks</h1>
+              </div>
+              <ul class="flex justify-between">
+                <li><a class="projectsOverview content__header-link">Overview</a></li>
+                <li><a class="projectsChat content__header-link">Chat</a></li>
+                <li><a class="projectsTasks content__header-link">Tasks</a></li>
+                <li><a class="projectsMembers content__header-link">Members</a></li>
+              </ul>  
+            </div>
+            <div class="content__content">
+              <div class="content__content-title">
+                <h1 id="viewTitle" class="text-xl font-serif text-darkbrown">All tasks</h1>
+                <div>
+                  <button class="join__btn"><i class="fa-solid fa-plus"></i> new task</button>
+                </div>
+              </div>
+
+              <div id="tasklist">
+                <!-- JS -->
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="addProjectPage" class="add__container hidden">
+        <div class="add__content">
+          <h1 class="text-3xl text-brown font-serif pb-2">New project ...</h1>
+          <p class="text-lightgray formpage__intro pb-2">Please enter some details</p>
+          <label class="formpage__label" for="">Title</label>
+          <input id="addProjectTitleInp" class="block formpage__input" type="text" placeholder="Title">
+          <label class="formpage__label" for="">Deadline</label>
+          <input id="addProjectDeadlineInp" class="block formpage__input" type="datetime-local" placeholder="Deadline">
+          <label class="formpage__label" for="">Description</label>
+          <input class="block formpage__input" id="addProjectDescrInp" placeholder="Description"></input>
+          <label class="formpage__label" for="">Status</label>
+          <select class="formpage__input" name="" id="addProjectStatusInp">
+            <option value="1">Not defined</option>
+            <option value="2">Not started</option>
+            <option value="3">Completed</option>
+            <option value="4">Overdue</option>
+          </select>
+          <div class="flex justify-between">
+            <button id="cancelAddProjectBtn" class="block add__content-button cancel__button">Cancel</button>
+            <button id="submitAddProjectBtn" class="block add__content-button add__button">Add project</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+

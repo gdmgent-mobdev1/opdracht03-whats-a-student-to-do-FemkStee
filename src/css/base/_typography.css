@@ -1,0 +1,90 @@
+/* Text colors */
+
+.text-darkbrown {
+    color: var(--color-darkbrown);
+}
+
+.text-brown {
+    color: var(--color-brown);
+}
+
+.text-brown2 {
+    color: var(--color-brown2);
+}
+
+.text-lightgray {
+    color: var(--color-lightgray);
+}
+
+.text-darkgray {
+    color: var(--color-darkgray);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+/* Font family */
+.font-serif {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.font-sans {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Border Radius */
+.rounded {
+    border-radius: 0.5rem;
+}
+
+/* Font sizes */
+.text-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+.text-base {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+}
+
+.text-lg {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.text-xl {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+
+.text-2xl {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+.text-3xl {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+}
+
+.text-4xl {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+}
+
+/* Text align */
+.text-center {
+    text-align: center;
+}
+
+/* Font weight */
+.font-bold {
+    font-weight: 700;
+}
+
+/* Text transform */
+.uppercase {
+    text-transform: uppercase;
+}
